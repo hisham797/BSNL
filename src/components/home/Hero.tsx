@@ -30,7 +30,7 @@ const Hero = () => {
               <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-primary/30 rounded-full filter blur-3xl"></div>
               <img 
                 // src="https://img.freepik.com/free-vector/flat-wifi-zone-concept-with-signal_23-2148191882.jpg?t=st=1743924251~exp=1743927851~hmac=ea241f60bf047c339c02c8f826658f1b3b87e2e4fe4ca963a42d71610f0312bc&w=740" 
-                src='/public/images/vector.png'
+                src='/images/vector.png'
                 alt="High-speed internet" 
                 className="relative z-10 max-w-full mb-16 "
               />
