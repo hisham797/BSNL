@@ -8,6 +8,8 @@
 
 There are several ways of editing your application.
 
+1.  Attach the image :![Image](https://github.com/user-attachments/assets/7fd782d0-2abe-4855-9913-184667bcdc54)
+
 **Use Lovable**
 
 Changes made via Lovable will be committed automatically to this repo.
