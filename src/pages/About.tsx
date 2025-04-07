@@ -25,7 +25,7 @@ const About = () => {
         {/* Header Section */}
         <section className="bg-secondary text-white py-16">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">About VI Digital</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">About BSNL SUPER WIFI VISION</h1>
             <p className="text-lg max-w-2xl mx-auto">
               Learn more about our mission to provide high-quality internet and entertainment services across Kerala.
             </p>
@@ -39,7 +39,7 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <p className="text-gray-600 mb-4">
-                Founded in 2008, VI emerged with a bold vision to transform the telecommunications landscape by offering innovative, affordable, and reliable services to customers across the nation.
+                Founded in 2008, BSNL super wifi vision emerged with a bold vision to transform the telecommunications landscape by offering innovative, affordable, and reliable services to customers across the nation.
               </p>
               <p className="text-gray-600 mb-4">
                 What began as a small startup has grown into a leading telecommunications company, reaching millions of customers and expanding our service offerings to include high-speed internet, premium entertainment, mobile plans, and business solutions.
@@ -125,7 +125,7 @@ const About = () => {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose VI Digital</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose BSNL super wifi vision</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 We stand out from the competition with our commitment to quality, affordability, and customer satisfaction.
               </p>
@@ -176,7 +176,7 @@ const About = () => {
         </section>
         
         {/* Team Section */}
-        <section className="py-16 bg-gray-50">
+        {/* <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Leadership Team</h2>
@@ -232,14 +232,14 @@ const About = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         
         {/* CTA Section */}
         <section className="bg-primary py-16 text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Join Our Growing Family of Satisfied Customers</h2>
             <p className="text-lg max-w-2xl mx-auto mb-8">
-              Experience the VI Digital difference with our premium internet and entertainment services.
+              Experience the BSNL super wifi vision difference with our premium internet and entertainment services.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/offers">
