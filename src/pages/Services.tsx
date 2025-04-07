@@ -103,7 +103,7 @@ const Services = () => {
               <ServiceCard 
                 icon={<Tv size={30} />}
                 title="Entertainment Packages"
-                description="Premium OTT platform access bundled with your internet connection."
+                description="Access to Premium OTT platform access bundled with your internet connection."
                 features={[
                   "Disney+ Hotstar Premium",
                   "Netflix, Amazon Prime Video",

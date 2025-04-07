@@ -14,8 +14,8 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center">
-              <span className="text-2xl font-bold text-primary">BSNL</span>
-              <span className="ml-1 text-2xl font-bold text-secondary">Digital</span>
+              <span className="text-2xl font-bold text-primary">BSNL SUPER</span>
+              <span className="ml-1 text-2xl font-bold text-secondary"> WIFI VISION</span>
             </Link>
           </div>
           

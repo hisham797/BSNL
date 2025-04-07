@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="relative bg-gradient-to-br from-secondary to-dark  pb-16 md:pt-32 md:pb-24">
-      <div className="container mx-auto px-4">
+    <div className="relative bg-gradient-to-br from-secondary to-dark pt-36 pb-16 md:pt-28 md:pb-24">
+      <div className="container mx-auto px-10 mb-20 ">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0 md:pr-12">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight ">
               Super Fast Internet & Entertainment
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8">
@@ -39,7 +39,7 @@ const Hero = () => {
               <img
                 src="/images/vector.png"
                 alt="High-speed internet"
-                className="relative z-10 max-w-full mb-16 "
+                className="relative z-10 w-full  mb-16 sm:block hidden"
               />
             </div>
           </div>

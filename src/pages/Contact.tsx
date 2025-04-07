@@ -3,26 +3,16 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
-import { Phone, Mail, MapPin, Clock, MessageSquare, Users } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, MessageSquare, MessageCircle, Users } from 'lucide-react';
 
 const Contact = () => {
   const { toast } = useToast();
-  
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Message Sent",
-      description: "Thank you for contacting us. We'll get back to you soon!",
-    });
-  };
 
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow pt-10">
+      <main className="flex-grow pt-20">
         {/* Header Section */}
         <section className="bg-secondary text-white py-16">
           <div className="container mx-auto px-4 text-center">
@@ -36,7 +26,7 @@ const Contact = () => {
         {/* Contact Information */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
               <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-300">
                 <div className="bg-primary/10 p-4 rounded-full mb-4">
                   <Phone size={28} className="text-primary" />
@@ -45,12 +35,25 @@ const Contact = () => {
                 <p className="text-gray-600 mb-4">
                   Our customer support team is available to help you 24/7.
                 </p>
-                <a href="tel:+911800123456" className="text-primary font-semibold">
-                  +91 1800 123 4567
+                <a href="tel:+919400485966" className="text-primary font-semibold">
+                  +91 9400 4859 66
                 </a>
               </div>
               
               <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-300">
+                <div className="bg-green-100 p-4 rounded-full mb-4">
+                  <MessageCircle size={28} className="text-green-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">WhatsApp</h3>
+                <p className="text-gray-600 mb-4">
+                  Chat with us on WhatsApp for quick responses to your queries.
+                </p>
+                <a href="https://wa.me/919400485966" target="_blank" rel="noopener noreferrer" className="text-green-600 font-semibold">
+                  Chat Now
+                </a>
+              </div>
+              
+              {/* <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-300">
                 <div className="bg-primary/10 p-4 rounded-full mb-4">
                   <Mail size={28} className="text-primary" />
                 </div>
@@ -61,108 +64,74 @@ const Contact = () => {
                 <a href="mailto:support@vidigital.com" className="text-primary font-semibold">
                   support@vidigital.com
                 </a>
-              </div>
-              
-              <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-300">
-                <div className="bg-primary/10 p-4 rounded-full mb-4">
-                  <MapPin size={28} className="text-primary" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Visit Us</h3>
-                <p className="text-gray-600 mb-4">
-                  Come visit our office to learn more about our services.
-                </p>
-                <address className="not-italic text-primary font-semibold">
-                  123 Tech Park, Kerala, India - 682030
-                </address>
-              </div>
+              </div> */}
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* Contact Form */}
+              {/* WhatsApp Chat Box - replacing the contact form */}
               <div className="bg-white rounded-xl shadow-lg p-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
-                <form onSubmit={handleSubmit}>
-                  <div className="space-y-6">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                      <div>
-                        <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">
-                          First Name
-                        </label>
-                        <Input
-                          id="firstName"
-                          placeholder="John"
-                          required
-                          className="w-full"
-                        />
-                      </div>
-                      
-                      <div>
-                        <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-1">
-                          Last Name
-                        </label>
-                        <Input
-                          id="lastName"
-                          placeholder="Doe"
-                          required
-                          className="w-full"
-                        />
-                      </div>
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                        Email Address
-                      </label>
-                      <Input
-                        id="email"
-                        type="email"
-                        placeholder="john@example.com"
-                        required
-                        className="w-full"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                        Phone Number
-                      </label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        placeholder="+91 98765 43210"
-                        className="w-full"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                        Subject
-                      </label>
-                      <Input
-                        id="subject"
-                        placeholder="Service Inquiry"
-                        required
-                        className="w-full"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                        Your Message
-                      </label>
-                      <Textarea
-                        id="message"
-                        placeholder="How can we help you?"
-                        required
-                        className="w-full min-h-[150px]"
-                      />
-                    </div>
-                    
-                    <Button type="submit" className="w-full bg-primary hover:bg-primary-hover text-white">
-                      Send Message
-                    </Button>
+                <div className="flex flex-col items-center text-center mb-8">
+                  <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mb-6">
+                    <MessageCircle size={40} className="text-white" />
                   </div>
-                </form>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">Chat With Us on WhatsApp</h2>
+                  <p className="text-gray-600 mb-8 max-w-md">
+                    Get quick responses to your queries through WhatsApp. Our team is ready to assist you with any questions, troubleshooting, or service inquiries!
+                  </p>
+                  <a 
+                    href="https://wa.me/919400485966" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full transition-colors font-medium text-lg w-full sm:w-auto justify-center"
+                  >
+                    <MessageCircle size={24} />
+                    Start WhatsApp Chat
+                  </a>
+                </div>
+                
+                <div className="mt-8 pt-8 border-t border-gray-100">
+                  <h4 className="text-lg font-semibold text-gray-900 mb-4">Why Chat With Us via WhatsApp?</h4>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="flex items-start">
+                      <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center mr-2">
+                        <span className="text-green-500 text-xs font-bold">✓</span>
+                      </div>
+                      <p className="text-gray-700">Instant responses</p>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center mr-2">
+                        <span className="text-green-500 text-xs font-bold">✓</span>
+                      </div>
+                      <p className="text-gray-700">No waiting on hold</p>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center mr-2">
+                        <span className="text-green-500 text-xs font-bold">✓</span>
+                      </div>
+                      <p className="text-gray-700">Share screenshots easily</p>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center mr-2">
+                        <span className="text-green-500 text-xs font-bold">✓</span>
+                      </div>
+                      <p className="text-gray-700">24/7 support</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="mt-8 pt-8 border-t border-gray-100">
+                  <div className="p-4 bg-green-50 rounded-lg border border-green-100">
+                    <div className="flex items-start">
+                      <div className="mr-3 mt-1">
+                        <Users size={20} className="text-green-600" />
+                      </div>
+                      <div>
+                        <h5 className="font-medium text-gray-900">Our Support Team is Online Now</h5>
+                        <p className="text-sm text-gray-600">Average response time: under 5 minutes</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               
               {/* Additional Information */}
@@ -241,9 +210,9 @@ const Contact = () => {
               <div className="h-96 w-full bg-gray-300 flex items-center justify-center">
                 <div className="text-center p-8">
                   <MapPin size={48} className="text-primary mx-auto mb-4" />
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">VI Digital Office</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">BSNL SUPER WIFI VISION</h3>
                   <p className="text-gray-600">
-                    123 Tech Park, Kerala, India - 682030
+                  BSNL super wifi vision Digital Office, Kerala, India - 679338
                   </p>
                   <div className="mt-4">
                     <Button className="bg-primary hover:bg-primary-hover text-white">

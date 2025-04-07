@@ -11,8 +11,9 @@ import MobileAppSection from '@/components/home/MobileAppSection';
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
       <main className="flex-grow">
+      <Navbar />
+        
         <Hero />
         <OffersSection />
         <ServicesSection />
