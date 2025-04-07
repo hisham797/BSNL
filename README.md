@@ -36,29 +36,39 @@ npm i
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+✏️ Edit a File Directly in GitHub
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. 📂 Navigate to the desired file(s) in your repository.
 
-**Use GitHub Codespaces**
+2. 🖊️ Click the "Edit" button (pencil icon) at the top right of the file view.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+3.💾 Make your changes and commit them directly from the browser.
 
-## What technologies are used for this project?
+💻 Use GitHub Codespaces
 
+ 1. 🏠 Go to the main page of your repository.
+
+2. 🧩 Click the "Code" button (green button) near the top right.
+
+3. 🧭 Select the "Codespaces" tab.
+
+4. 🚀 Click "New codespace" to launch a fresh development environment.
+
+5. 🛠️ Edit files directly within Codespace and
+   ✅ Commit & push your changes when you're done.
+
+🛠️ What Technologies Are Used for This Project?
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+•⚡ Vite – Fast frontend build tool
+
+•🔷 TypeScript – Typed JavaScript
+
+•⚛️ React – UI library
+
+•💎 shadcn/ui – Elegant UI components
+
+•🎨 Tailwind CSS – Utility-first CSS framework
 
 
 
