@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow pt-20">
+      <main className="flex-grow pt-16">
         {/* Header Section */}
         <section className="bg-secondary text-white py-16">
           <div className="container mx-auto px-4 text-center">

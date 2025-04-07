@@ -30,6 +30,14 @@ const Hero = () => {
                   Contact Us
                 </Button>
               </Link>
+              <Link to="/contact">
+                <Button
+                  variant="outline"
+                  className="border-white opacity-0 text-black hover:text-white hover:bg-white/10 px-8 py-6 text-lg"
+                >
+                  Contact Us
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="md:w-1/2 animate-fade-in">
@@ -39,7 +47,7 @@ const Hero = () => {
               <img
                 src="/images/vector.png"
                 alt="High-speed internet"
-                className="relative z-10 w-full  mb-16 sm:block hidden"
+                className="relative z-10 w-full max-w-xl sm:max-w-2xl mb-16 sm:block hidden"
               />
             </div>
           </div>
