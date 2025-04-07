@@ -45,7 +45,7 @@ const Hero = () => {
               <div className="absolute top-20 -left-20 w-30 h-30 bg-primary/30 rounded-full filter blur-3xl"></div>
               <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-primary/30 rounded-full filter blur-3xl"></div>
               <img
-                src="/images/vector.png"
+                src="/images/vector2.png"
                 alt="High-speed internet"
                 className="relative z-10 w-full max-w-xl sm:max-w-2xl mb-16 sm:block hidden"
               />

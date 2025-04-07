@@ -36,7 +36,7 @@ const Offers = () => {
     {
       slNo: 4,
       planName: "Fibre Basic",
-      price: "499",
+      price: "399",
       fupData: "3300 GB",
       maxSpeed: "60 Mbps",
       postFupSpeed: "4 Mbps"
@@ -203,7 +203,7 @@ const Offers = () => {
     {
       slNo: 4,
       planName: "Fibre Basic",
-      price: "499",
+      price: "399",
       fupData: "3300 GB",
       maxSpeed: "60 Mbps",
       postFupSpeed: "4 Mbps"
@@ -259,7 +259,7 @@ const Offers = () => {
                 
                 <PriceBox 
                   title="Fibre Basic" 
-                  price="499" 
+                  price="399" 
                   speed="60mbps"
                   features={[
                     "3300 GB FUP Data",

@@ -78,7 +78,7 @@ const OffersSection = () => {
                 
                 <PriceCard 
                   title="Fibre Basic" 
-                  price="499" 
+                  price="399" 
                   speed="60mbps"
                   features={[
                     "3300 GB FUP Data",

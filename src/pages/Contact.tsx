@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
-import { Phone, Mail, MapPin, Clock, MessageSquare, MessageCircle, Users } from 'lucide-react';
+import { Phone, MapPin, Clock, MessageSquare, MessageCircle, Users } from 'lucide-react';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -26,7 +26,7 @@ const Contact = () => {
         {/* Contact Information */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
               <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-300">
                 <div className="bg-primary/10 p-4 rounded-full mb-4">
                   <Phone size={28} className="text-primary" />
@@ -53,18 +53,23 @@ const Contact = () => {
                 </a>
               </div>
               
-              {/* <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-300">
+              <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-300">
                 <div className="bg-primary/10 p-4 rounded-full mb-4">
-                  <Mail size={28} className="text-primary" />
+                  <MapPin size={28} className="text-primary" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Email Us</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Location</h3>
                 <p className="text-gray-600 mb-4">
-                  Send us an email and we'll get back to you as soon as possible.
+                Located in Kolathur, Kurupathal easily accessible across Kerala.
                 </p>
-                <a href="mailto:support@vidigital.com" className="text-primary font-semibold">
-                  support@vidigital.com
-                </a>
-              </div> */}
+                <a 
+                    href="https://maps.google.com/?q=Kolathur,Kerala" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center text-primary hover:underline"
+                  >
+                    <span>Get directions</span>
+                  </a>
+              </div>
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -215,9 +220,15 @@ const Contact = () => {
                   BSNL super wifi vision Digital Office, Kerala, India - 679338
                   </p>
                   <div className="mt-4">
+                  <a 
+                    href="https://maps.google.com/?q=Kolathur,Kerala" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                  >
                     <Button className="bg-primary hover:bg-primary-hover text-white">
                       Get Directions
                     </Button>
+                  </a>
                   </div>
                 </div>
               </div>
