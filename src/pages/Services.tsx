@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from "@/components/ui/button";
+import { Link } from 'react-router-dom';
 import { 
   Check, 
   Wifi, 
@@ -227,12 +228,16 @@ const Services = () => {
               Contact our team today to find the perfect service for your needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/contact">
               <Button className="bg-white text-primary hover:bg-gray-100 px-8">
                 Contact Us
               </Button>
+              </Link>
+              <Link to="/offers">
               <Button variant="outline" className="border-white text-black hover:text-white hover:bg-white/10 px-8">
                 View All Plans
               </Button>
+              </Link>
             </div>
           </div>
         </section>

@@ -42,9 +42,11 @@ const Navbar = () => {
           
           {/* CTA Button */}
           <div className="hidden md:flex items-center">
+            <Link to="/offers">
             <Button className="bg-primary hover:bg-primary-hover text-white">
               Get Started
             </Button>
+            </Link>
           </div>
           
           {/* Mobile menu button */}

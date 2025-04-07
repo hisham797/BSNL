@@ -6,6 +6,7 @@ import PlansTable from '@/components/PlansTable';
 import PriceBox from '@/components/PriceBox';
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Link } from 'react-router-dom';
 
 const Offers = () => {
   const homeBroadbandPlans = [
@@ -403,12 +404,16 @@ const Offers = () => {
               Contact our team today to find the perfect plan for your needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/contact">
               <Button className="bg-primary hover:bg-primary-hover text-white px-8">
                 Contact Us
               </Button>
+              </Link>
+              <Link to="/services">
               <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 px-8">
                 Learn More
               </Button>
+              </Link>
             </div>
           </div>
         </section>

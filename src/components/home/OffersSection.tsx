@@ -44,11 +44,13 @@ const PriceCard = ({
           ))}
         </ul>
         <div className="mt-6">
+        <Link to="/offers">
           <Button 
             className={`w-full ${popular ? 'bg-primary hover:bg-primary-hover' : 'bg-gray-800 hover:bg-gray-900'} text-white`}
           >
             Explore Offer
           </Button>
+          </Link>
         </div>
       </div>
     </div>

@@ -242,12 +242,16 @@ const About = () => {
               Experience the VI Digital difference with our premium internet and entertainment services.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/offers">
               <Button className="bg-white text-primary hover:bg-gray-100 px-8 flex items-center gap-2">
                 Get Started Now <ArrowRight size={18} />
               </Button>
+              </Link>
+              <Link to="/contact">
               <Button variant="outline" className="border-white text-black hover:text-white hover:bg-white/10 px-8">
                 Contact Us
               </Button>
+              </Link>
             </div>
           </div>
         </section>
