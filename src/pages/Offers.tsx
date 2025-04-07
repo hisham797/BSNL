@@ -1,12 +1,11 @@
-
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import PlansTable from '@/components/PlansTable';
 import PriceBox from '@/components/PriceBox';
+import { Link } from 'react-router-dom'
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Link } from 'react-router-dom';
 
 const Offers = () => {
   const homeBroadbandPlans = [
@@ -230,7 +229,7 @@ const Offers = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow pt-10">
+      <main className="flex-grow pt-14">
         {/* Header Section */}
         <section className="bg-secondary text-white py-16">
           <div className="container mx-auto px-4 text-center">
@@ -252,45 +251,66 @@ const Offers = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-              <PriceBox 
-                title="Fibre Basic" 
-                price="599" 
-                speed="75 Mbps"
-                features={[
-                  "4000 GB FUP Data",
-                  "Post-FUP: 4 Mbps",
-                  "OTT Pack Included",
-                  "24/7 Customer Support",
-                  "Free Installation"
-                ]}
-              />
+              <div className="relative">
+                {/* Red div overlaying the first box */}
+                <div className="absolute -top-6  bg-[#ea384c] text-white font-bold py-2 px-4 rounded-lg shadow-lg transform -rotate-3 z-10">
+                  Unlimited Data & calls
+                </div>
+                
+                <PriceBox 
+                  title="Fibre Basic" 
+                  price="499" 
+                  speed="60mbps"
+                  features={[
+                    "3300 GB FUP Data",
+                    "Post-FUP: 4 Mbps",
+                    "Post-FUP Speed: 4 Mbps",
+                    "Entry level plans ( monthly )",
+                    "24/7 Customer Support",
+                  ]}
+                />
+              </div>
               
-              <PriceBox 
-                title="Fibre Value" 
-                price="799" 
-                speed="125 Mbps"
-                features={[
-                  "4000 GB FUP Data",
-                  "Post-FUP: 8 Mbps",
-                  "Premium OTT Pack",
-                  "24/7 Customer Support",
-                  "Free Installation & Router"
-                ]}
-                popular={true}
-              />
+              <div className="relative">
+                {/* Red div overlaying the second box */}
+                <div className="absolute -top-6  bg-[#ea384c] text-white font-bold py-2 px-4 rounded-lg shadow-lg transform -rotate-3 z-10">
+                  Unlimited Data & calls
+                </div>
+                
+                <PriceBox 
+                  title="	Superstar Premium +" 
+                  price="999" 
+                  speed="200 Mbps"
+                  features={[
+                    "5000 GB Data FUP Data",
+                    "Max Speed: 200 Mbps",
+                    "Post-FUP: 10mbps",
+                    "OTT4",
+                    "24/7 Customer Support",
+                  ]}
+                  popular={true}
+                />
+              </div>
               
-              <PriceBox 
-                title="Fibre Premium" 
-                price="1499" 
-                speed="250 Mbps"
-                features={[
-                  "5000 GB FUP Data",
-                  "Post-FUP: 15 Mbps",
-                  "All OTT Services",
-                  "24/7 Priority Support",
-                  "Free Installation & Premium Router"
-                ]}
-              />
+              <div className="relative">
+                {/* Red div overlaying the third box */}
+                <div className="absolute -top-6  bg-[#ea384c] text-white font-bold py-2 px-4 rounded-lg shadow-lg transform -rotate-3 z-10">
+                  Unlimited Data & calls
+                </div>
+                
+                <PriceBox 
+                  title="Fibre Premium Plus OTT" 
+                  price="1499" 
+                  speed="250 Mbps"
+                  features={[
+                    "5000 GB FUP Data",
+                    "Post-FUP: 15 Mbps",
+                    "OTT4+",
+                    "24/7 Priority Support",
+                    "Max Speed: 250 Mbps",
+                  ]}
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -409,7 +429,7 @@ const Offers = () => {
                 Contact Us
               </Button>
               </Link>
-              <Link to="/services">
+              <Link to="/about">
               <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 px-8">
                 Learn More
               </Button>

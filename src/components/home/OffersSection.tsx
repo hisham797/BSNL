@@ -62,55 +62,75 @@ const OffersSection = () => {
     <section className="py-20 bg-white">
       
 
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto  px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Exclusive Offers Just for You</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Choose from our range of high-speed internet plans with premium OTT services included.
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <PriceCard 
-            title="Fibre Basic" 
-            price="599" 
-            speed="75 Mbps"
-            features={[
-              "4000 GB FUP Data",
-              "Post-FUP: 4 Mbps",
-              "OTT Pack Included",
-              "24/7 Customer Support",
-              "Free Installation"
-            ]}
-          />
-          
-          <PriceCard 
-            title="Fibre Value" 
-            price="799" 
-            speed="125 Mbps"
-            features={[
-              "4000 GB FUP Data",
-              "Post-FUP: 8 Mbps",
-              "Premium OTT Pack",
-              "24/7 Customer Support",
-              "Free Installation & Router"
-            ]}
-            popular={true}
-          />
-          
-          <PriceCard 
-            title="Fibre Premium" 
-            price="1499" 
-            speed="250 Mbps"
-            features={[
-              "5000 GB FUP Data",
-              "Post-FUP: 15 Mbps",
-              "All OTT Services",
-              "24/7 Priority Support",
-              "Free Installation & Premium Router"
-            ]}
-          />
-        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              <div className="relative">
+                {/* Red div overlaying the first box */}
+                <div className="absolute -top-6  bg-[#ea384c] text-white font-bold py-2 px-4 rounded-lg shadow-lg transform -rotate-3 z-10">
+                  Unlimited Data & calls
+                </div>
+                
+                <PriceCard 
+                  title="Fibre Basic" 
+                  price="499" 
+                  speed="60mbps"
+                  features={[
+                    "3300 GB FUP Data",
+                    "Post-FUP: 4 Mbps",
+                    "Post-FUP Speed: 4 Mbps",
+                    "Entry level plans ( monthly )",
+                    "24/7 Customer Support",
+                  ]}
+                />
+              </div>
+              
+              <div className="relative">
+                {/* Red div overlaying the second Card */}
+                <div className="absolute -top-6  bg-[#ea384c] text-white font-bold py-2 px-4 rounded-lg shadow-lg transform -rotate-3 z-10">
+                  Unlimited Data & calls
+                </div>
+                
+                <PriceCard 
+                  title="	Superstar Premium +" 
+                  price="999" 
+                  speed="200 Mbps"
+                  features={[
+                    "5000 GB Data FUP Data",
+                    "Max Speed: 200 Mbps",
+                    "Post-FUP: 10mbps",
+                    "OTT4",
+                    "24/7 Customer Support",
+                  ]}
+                  popular={true}
+                />
+              </div>
+              
+              <div className="relative">
+                {/* Red div overlaying the third Card */}
+                <div className="absolute -top-6  bg-[#ea384c] text-white font-bold py-2 px-4 rounded-lg shadow-lg transform -rotate-3 z-10">
+                  Unlimited Data & calls
+                </div>
+                
+                <PriceCard 
+                  title="Fibre Premium Plus OTT" 
+                  price="1499" 
+                  speed="250 Mbps"
+                  features={[
+                    "5000 GB FUP Data",
+                    "Post-FUP: 15 Mbps",
+                    "OTT4+",
+                    "24/7 Priority Support",
+                    "Max Speed: 250 Mbps",
+                  ]}
+                />
+              </div>
+            </div>
         
         <div className="text-center mt-12">
           <Link to="/offers">
