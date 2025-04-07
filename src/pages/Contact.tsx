@@ -257,7 +257,7 @@ const Contact = () => {
               <div className="bg-white p-6 rounded-xl shadow-md">
                 <h3 className="text-lg font-bold text-gray-900 mb-2">What should I do if my internet is not working?</h3>
                 <p className="text-gray-600">
-                  First, try restarting your router. If the issue persists, please contact our technical support team at +91 1800 123 4567 for immediate assistance.
+                  First, try restarting your router. If the issue persists, please contact our technical support team at +91 9400 4859 66 for immediate assistance.
                 </p>
               </div>
               
