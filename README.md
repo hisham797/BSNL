@@ -1,62 +1,102 @@
-# Welcome to your Lovable project
+# BSNL Super Wifi Vision
+
+A modern web application built with Reactjs and vite for advertise the the services.
+
+##  🚀 Features
+  - **Static**:Dont have back end 
+  
+  - **Responcive**: it gives us better experence in all devices like mobile,tablet and dektop
+
+  - **Updation**:We can update this throgh the github
+
+  
+##  ✏️ Edit a File Directly in GitHub
+
+- Navigate to the **desired file(s)** in your repository  
+- Click the **"Edit" button** (pencil icon) at the top right of the file view  
+- Make your changes and **commit** them directly from the browser  
+
+   
+
+##  💻 Use GitHub Codespaces
+
+
+ - **Go to the main page of your repository**
+   
+ - **Click the "Code" button (green button) near the top right**
+   
+ - **Select the "Codespaces" tab**
+    
+ - **Click "New codespace" to launch a fresh development environment**
+   
+ • **Edit files directly within Codespace andcommit & push your changes when you're done**
+
+     
+
+##  🛠️ What Technologies Are Used for This Project? 
+This project is built with:
+
+
+
+   - **Vite** – Fast frontend build tool
+   
+   - **TypeScript** – Typed JavaScript
+   
+   - **React** – UI library
+   
+   - **shadcn/ui** – Elegant UI components
+   
+   - **Tailwind CSS** – Utility-first CSS framework
+
 
 ## Project info
 
 **URL**: https://bsnlnetwork.vercel.app/
 
-## How can I edit this code?
+## Mokup
 
-There are several ways of editing your application.
+  ![Image](https://github.com/user-attachments/assets/7fd782d0-2abe-4855-9913-184667bcdc54)
 
-**Use Lovable**
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Follow these steps:
+## 📦 Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1.Clone the repository :
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+    git clone https://github.com/hisham797/BSNL.git
+    
+2.Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
 ```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+ 3.Run the development server:
+ 
+  ```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-**Use GitHub Codespaces**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
+## 🚀 Available Scripts
 
-This project is built with:
+- `npm run dev` : Start development server  
+- `npm run build` : Build the application for production  
+- `npm run preview` : Start the production server  
+- `npm run lint` : Run ESLint
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+  
 
 
 
